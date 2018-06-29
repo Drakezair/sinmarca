@@ -1,0 +1,228 @@
+@font-face {
+	font-family: merriweather-bold;
+	src: url('../src/fuentes/merriweather/Merriweather-Bold.otf');
+}
+
+@font-face {
+	font-family: merriweather-regular;
+	src: url('../src/fuentes/merriweather/Merriweather-Regular.otf');
+}
+
+@font-face {
+	font-family: lato-light;
+	src: url('../src/fuentes/lato/Lato-Light.ttf');
+}
+
+@font-face {
+	font-family: lato-regular;
+	src: url('../src/fuentes/lato/Lato-Regular.ttf');
+}
+
+body {
+	margin: 0;
+}
+
+
+/* HEADER  */
+
+
+.headerBar {
+	min-height: 70px;
+	background: #183c5d;
+	padding: 0 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+		height: 45px;
+}
+
+.headerBackground {
+	height: 550px;
+	background-image: url("../src/imagenes/fondo1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -90px;
+	margin: 10px 0;
+}
+
+.option {
+	color: #7A8CA0;
+	font-family: 'merriweather-bold',sans-serif;
+	margin: 0 30px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.option:hover {
+	color: #fff;
+}
+
+.headerBackground {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 80px;
+}
+
+.searchBox {
+	width: 630px;
+  height: 250px;
+	background: rgba(255, 255, 255, 0.8);
+	padding: 0 40px;
+}
+
+.searchBox h1 {
+	font-family: 'merriweather-bold', sans-serif;
+	font-size: 26px;
+	color: #1f2045;
+	margin: 55px 0 0;
+}
+
+.searchBox p {
+	font-family: 'lato-light', sans-serif;
+	font-size: 18px;
+	color: #414667;
+	margin: 5px 0;
+}
+
+.searchButton {
+	display: block;
+	float: right;
+	margin-top: 10px;
+	height: 35px;
+	width: 235px;
+	border-radius: 5px;
+	border: 0.5px solid #000;
+	background: #183c5d;
+	font-family: 'lato-regular', sans-serif;
+	color: #fff;
+	font-size: 16px;
+}
+
+.input {
+	width: 620px;
+  height: 34px;
+}
+
+.headerSlide {
+	background: #fff;
+	height: 400px;
+  width: 320px;
+}
+
+.headerNav {
+	height: 100px;
+	margin: 10px 0;
+	background: #ececec;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.textNav h2{
+	color: #1f2045;
+	font-size: 20px;
+	font-family: 'merriweather-regular', sans-serif;
+	margin: 5px;
+}
+
+.textNav p {
+	font-family: 'lato-light',sans-serif;
+	color: #414667;
+	font-size: 12px;
+	margin: 5px;
+}
+
+.buttonNav {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.buttonNav img {
+		height: 65px;
+}
+
+.buttonNav p {
+	margin: 0;
+}
+
+
+
+/* SLIDE SECTION */
+
+
+.slideShow {
+	height: 720px;
+	background-image: url('../src/imagenes/fondo2.png');
+	position: relative;
+}
+
+.dots {
+	position: absolute;
+	bottom: 10px;
+	height: 12px;
+	background: rgba(255, 255, 255, 0.8);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.dot {
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	margin: auto 5px;
+	border: none;
+	background: #969696
+}
+
+.slideInfoContain {
+	position: absolute;
+  left: 100px;
+  bottom: 70px;
+  width: 640px;
+  height: 145px;
+  background: rgba(255, 255, 255, 0.8);
+	padding: 40px;
+}
+
+.slideInfoContain h3 {
+	font-family: 'merriweather-bold', sans-serif;;
+	font-size: 28px;
+	color: #1f2045;
+	margin: 0;
+}
+
+.slideInfoContain span {
+	display: flex;
+	align-items: center;
+	font-family: 'merriweather-regular',sans-serif;
+	color: #414667
+}
+
+.slideInfoContain span img {
+	height: 25px;
+}
+
+.slideInfoContain p {
+	font-family: 'lato-regular',sans-serif;
+	color: #414667;
+	margin: 5px;
+}
+
+.slideInfoContain button {
+	font-family: 'lato-regular',sans-serif;
+    font-size: 12px;
+    color: #1f2045;
+    background: #fff;
+    border: solid 0.5px #000;
+    width: 200px;
+    height: 35px;
+    border-radius: 3px;
+		margin: 10px 0 0;
+}
