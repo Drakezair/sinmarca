@@ -57,7 +57,10 @@ body {
 }
 
 .headerBackgroundContain {
+<<<<<<< HEAD
 	height: 550px;
+=======
+>>>>>>> 22fd0b9a416b5ccb78d31011a45848ae8358fcbf
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
