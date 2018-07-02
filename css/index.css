@@ -22,14 +22,22 @@ body {
 	margin: 0;
 }
 
+.container {
+	max-width: 1224px;
+	margin: auto;
+	position: relative;
+}
+
 
 /* HEADER  */
 
 
+.headerBarBackground {
+	background: #183c5d;
+}
+
 .headerBar {
 	min-height: 70px;
-	background: #183c5d;
-	padding: 0 40px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -49,6 +57,12 @@ body {
 	margin: 10px 0;
 }
 
+.headerBackgroundContain {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .option {
 	color: #7A8CA0;
 	font-family: 'merriweather-bold',sans-serif;
@@ -59,13 +73,6 @@ body {
 
 .option:hover {
 	color: #fff;
-}
-
-.headerBackground {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 80px;
 }
 
 .searchBox {
@@ -101,18 +108,31 @@ body {
 	font-family: 'lato-regular', sans-serif;
 	color: #fff;
 	font-size: 16px;
+	cursor: pointer;
+}
+
+.inputContain {
+	background: rgba(255, 255, 255, 0.8)
+}
+
+.inputContain img {
+	float: left;
+	margin: 3px 2px;;
 }
 
 .input {
-	width: 620px;
+	width: 598px;
   height: 34px;
 	font-family: 'lato-regular', sans-serif;
 	font-size: 20px;
 	color: #414667;
+	border: none;
+	background: rgba(255, 255, 255, 0.8)
 }
 
 .input::placeholder {
 	color: #b3b4ba;
+	font-family: 'lato-light', sans-serif;
 }
 
 .headerSlide {
@@ -121,10 +141,14 @@ body {
   width: 320px;
 }
 
-.headerNav {
-	height: 100px;
-	margin: 10px 0;
+.headerNavBackground {
 	background: #ececec;
+}
+
+.headerNavContainer {
+	height: 100px;
+	width: 1224px;
+	margin: 10px auto;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -132,7 +156,7 @@ body {
 
 .textNav h2{
 	color: #1f2045;
-	font-size: 20px;
+	font-size: 28px;
 	font-family: 'merriweather-regular', sans-serif;
 	margin: 5px;
 }
@@ -140,7 +164,7 @@ body {
 .textNav p {
 	font-family: 'lato-light',sans-serif;
 	color: #414667;
-	font-size: 12px;
+	font-size: 18px;
 	margin: 5px;
 }
 
@@ -151,7 +175,7 @@ body {
 }
 
 .buttonNav img {
-		height: 65px;
+		height: 45px;
 }
 
 .buttonNav p {
@@ -167,6 +191,8 @@ body {
 	height: 720px;
 	background-image: url('../src/imagenes/fondo2.png');
 	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .dots {
@@ -188,9 +214,12 @@ body {
 	background: #969696
 }
 
+.slide {
+	height: 720px;
+}
+
 .slideInfoContain {
 	position: absolute;
-  left: 100px;
   bottom: 70px;
   width: 640px;
   height: 145px;
@@ -233,6 +262,7 @@ body {
     height: 35px;
     border-radius: 3px;
 		margin: 10px 0 0;
+		cursor: pointer;
 }
 
 
@@ -242,7 +272,7 @@ body {
 	background: #ececec;
 	min-height: 460px;
 	margin: 10px 0;
-	padding: 40px 100px;
+	padding: 40px 0px;
 }
 
 .planeaContain h2 {
@@ -386,7 +416,7 @@ footer {
 .footerOptions {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 50px; 
+	margin-top: 50px;
 }
 
 .footerGuia {
@@ -407,6 +437,8 @@ footer {
 	color: #7a8ca0;
 	font-family: 'lato-regular',sans-serif;
 	font-size: 14px;
+	margin-bottom: 10px;
+
 }
 
 .footerOperadores {
@@ -427,6 +459,8 @@ footer {
 	color: #7a8ca0;
 	font-family: 'lato-regular',sans-serif;
 	font-size: 14px;
+	margin-bottom: 10px;
+
 }
 
 .footerAyuda {
@@ -447,4 +481,5 @@ footer {
 	color: #7a8ca0;
 	font-family: 'lato-regular',sans-serif;
 	font-size: 14px;
+	margin-bottom: 10px;
 }

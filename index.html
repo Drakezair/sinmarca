@@ -7,49 +7,55 @@
 </head>
 <body>
 	<header id="header" >
-		<div class="headerBar">
-			<img src="src/imagenes/logo.png" alt="logo" class="logo">
-			<div class="headerBarOptions">
-				<span href="" class="option">Ingresar</span>
-				<span href="" class="option">Idioma</span>
+		<div class="headerBarBackground">
+			<div class="container headerBar">
+				<img src="src/imagenes/logo.png" alt="logo" class="logo">
+				<div class="headerBarOptions">
+					<span href="" class="option">Ingresar</span>
+					<span href="" class="option">Idioma</span>
+				</div>
 			</div>
 		</div>
 
 		<div class="headerBackground">
-			<div class="searchBox">
-				<h1>Comienza a planear tu siguiente aventura</h1>
-				<p>Escribe un destino o actividad que quieras realizar</p>
-				<div class="inputContain">
-					<img src="" alt="">
-					<input class="input" type="text" placeholder="Ejm: Cusco, Líneas de Nazca, Canotaje...">
+			<div class="headerBackgroundContain container">
+				<div class="searchBox">
+					<h1>Comienza a planear tu siguiente aventura</h1>
+					<p>Escribe un destino o actividad que quieras realizar</p>
+					<div class="inputContain">
+						<img src="src/imagenes/search.png" alt="search">
+						<input class="input" type="text" placeholder="Ejm: Cusco, Líneas de Nazca, Canotaje...">
+					</div>
+					<button class='searchButton' >Buscar ofertas</button>
 				</div>
-				<button class='searchButton' >Buscar ofertas</button>
-			</div>
-			<div class="headerSlide" id="headerSlide" >
+				<div class="headerSlide" id="headerSlide" >
 
+				</div>
 			</div>
 		</div>
-		<div class="headerNav">
-			<div class="textNav">
-				<h2>¿Aún no sabes a dónde ir?</h2>
-				<p>Hecha un vistazo por aqui y aclara tus ideas</p>
+		<div class="headerNavBackground">
+			<div class="headerNavContainer">
+				<div class="textNav">
+					<h2>¿Aún no sabes a dónde ir?</h2>
+					<p>Hecha un vistazo por aqui y aclara tus ideas</p>
+				</div>
+				<button class="buttonNav">
+					<img src="src/imagenes/icon1.png" alt="img 1">
+					<p>Ofertas del mes</p>
+				</button>
+				<button class="buttonNav">
+					<img src="src/imagenes/icon2.png" alt="img 2">
+					<p>Lugares turísticos</p>
+				</button>
+				<button class="buttonNav">
+					<img src="src/imagenes/icon3.png" alt="img 3">
+					<p>Actividades locales</p>
+				</button>
+				<button class="buttonNav">
+					<img src="src/imagenes/icon4.png" alt="img 4">
+					<p>Preguntas frecuentes</p>
+				</button>
 			</div>
-			<button class="buttonNav">
-				<img src="src/imagenes/icon1.png" alt="img 1">
-				<p>Ofertas del mes</p>
-			</button>
-			<button class="buttonNav">
-				<img src="src/imagenes/icon2.png" alt="img 2">
-				<p>Lugares turísticos</p>
-			</button>
-			<button class="buttonNav">
-				<img src="src/imagenes/icon3.png" alt="img 3">
-				<p>Actividades locales</p>
-			</button>
-			<button class="buttonNav">
-				<img src="src/imagenes/icon4.png" alt="img 4">
-				<p>Preguntas frecuentes</p>
-			</button>
 		</div>
 	</header>
 
@@ -62,8 +68,9 @@
 				<a class="dot"></a>
 				<a class="dot"></a>
 			</div>
-			<div class="slide">
+			<div class="slide container">
 				<div class="slideInfoContain">
+
 					<h3>Playa Máncora</h3>
 					<span>
 						<img src="src/imagenes/ubicacion.png" alt="">
@@ -82,6 +89,7 @@
 
 	<section name="planeaSection" >
 		<div class="planeaContain">
+			<div class="container">
 			<h2>Deja de dar vueltas y planea tu siguiente aventura</h2>
 			<p>Hecha un vistazo, nuestras ofertas se actualizan todos los meses</p>
 			<div class="planeaGrid">
@@ -176,9 +184,11 @@
 			</div>
 			<button>Revisar más ofertas</button>
 		</div>
+		</div>
 	</section>
 
 	<footer>
+		<div class="container">
 		<div class="social">
 			<img src="src/imagenes/logo.png" alt="logo">
 			<p>Siguenos en nuestras redes</p>
@@ -210,6 +220,7 @@
 				<a href="">Libro de reclamaciones</a>
 			</div>
 		</div>
+	</div>
 	</footer>
 </body>
 </html>
