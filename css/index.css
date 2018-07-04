@@ -483,3 +483,281 @@ footer {
 	font-size: 14px;
 	margin-bottom: 10px;
 }
+
+
+/*MODAL Principical */
+
+.bodyDimmer {
+	overflow: hidden;
+}
+
+
+
+.dimmer {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	background: rgba(92, 92, 92, 0.75);
+	z-index: 3;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	animation: dimmerAnim .5s forwards;
+}
+
+.dimmerActive {
+	display: flex;
+}
+
+.modal {
+	width: 600px;
+	height: 350px;
+	background: #fff;
+	text-align: center;
+	display: none;
+	border-radius: 3px;
+}
+
+.modalTitle {
+	font-family: 'merriweather-bold',sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #1f2045;
+	margin: 20px 0;
+}
+
+.divider {
+	width: 99%;
+	margin: 5px auto;
+	border-top: 1px #e2e2e2 solid;
+}
+
+.modalText {
+	font-family: 'lato-regular', sans-serif;
+	font-size: 16px;
+	color: #414667;
+}
+
+.selectNacionalidad {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.bandera {
+	height: 55px;
+	width: 115px;
+	display: inline-flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.rojo {
+	width: 35px;
+	background: #d90018;
+}
+
+.select {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.nacionalidadAct {
+	font-family: 'merriweather-regular',sans-serif;
+	font-size: 30px;
+	color: #1f2045;
+	margin: 0;
+}
+
+.nacionalidadSelect {
+	font-family: 'lato-regular',sans-serif;
+	font-size: 18px;
+	color: #414667;
+	margin: 0;
+	cursor: pointer;
+}
+
+.modalButton {
+	margin: 20px;
+	background: none;
+	border: 1px solid #7a8ca0;
+	border-radius: 3px;
+	width: 490px;
+	height: 45px;
+	font-family: 'merriweather-regular',sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	color: #414667;
+}
+
+.language {
+
+	font-family: 'lato-regular',sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	color: #414667;
+	margin: 0;
+}
+
+.changeIcon {
+	font-size: 15px;
+	margin: 5px;
+}
+
+/* MODAL NACIONALIDAD */
+
+.nacionalidadModal {
+	height: 290px;
+	width: 600px;
+	background: #fff;
+	border-radius: 3px;
+	display: none;
+	padding: 10px;
+	text-align: center;
+}
+
+.nacionalidadInputContain {
+	background: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgb(205, 205, 205);
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+}
+
+.nacionalidadInput {
+	width: 570px;
+	padding: 0 5px;
+}
+
+.modalTextNacionalidad {
+	font-family: 'lato-regular', sans-serif;
+	font-size: 16px;
+	color: #414667;
+	margin: 30px 0 0;
+}
+
+.list {
+	width: 370px;
+	float: right;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;text-align: justify;
+	font-family: 'lato-regular', sans-serif;
+	font-size: 14px;
+	color: #414667;
+	margin-right: 30px;
+}
+
+.list p {
+	margin: 5px 0 5px 20px;
+}
+
+.list ul {
+	margin: 0
+}
+
+.passportImg {
+	display: inline;
+	height: 180px;
+	float: left;
+}
+
+/* Modal IDIOMA*/
+
+.idiomaModal {
+	border-radius: 3px;
+	display: none;
+	background: #fff;
+	width: 400px;
+	height: 200px;
+	padding: 10px;
+	text-align: center;
+}
+
+.backButton {
+		background: #ececec;
+		border:none;
+		border-radius: 3px;
+		float: left;
+		width: 50px;
+		height: 70px;
+}
+
+.backButton i {
+	font-size: 50px;
+  color: #414567;
+}
+
+.languageButton {
+    display: flex;
+		justify-content: space-between;
+		align-items: center;
+    margin: auto;
+    height: 37px;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    background: none;
+    border-top: none;
+    border-bottom: 1px solid #dfdfdf;
+    color: #7a8ca0;
+    font-family: 'lato-regular',sans-serif;
+    font-size: 20px;
+		cursor: pointer;
+		padding: 0 0 0 5px !important;
+}
+
+.languageButtonSelect {
+	background: #ececec;
+}
+
+.check {
+	background: #fff;
+  height: 36px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modals utilities */
+
+.modalsActive {
+	display: block;
+}
+
+.openAnim {
+	animation: openModal .3s forwards;
+}
+
+.closeAnim {
+	animation: closeModal .3s forwards;
+}
+
+/* Modals Animaciones */
+
+@keyframes dimmerAnim {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+@keyframes openModal {
+	from {
+		transform: scale(.0,.0) ;
+	}
+	to {
+		transform: scale(1,1);
+	}
+}
+
+@keyframes closeModal {
+	from {
+		transform: scale(1,1,);
+	}
+	to {
+		transform: scale(.0,.0);
+	}
+}

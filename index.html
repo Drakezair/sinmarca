@@ -3,9 +3,70 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<title>TeamSinMarca</title>
 </head>
-<body>
+<body id="body" class="bodyDimmer" >
+
+	<div class="dimmer dimmerActive" id="dimmer">
+
+		<div class="modal modalsActive openAnim" id="modal" >
+			<p class="modalTitle" >Confirma tu nacionalidad</p>
+			<div class="divider"></div>
+			<p class="modalText">
+				<strong>¿Por qué consideramos importate esta información?</strong>
+				<br/>
+				Porque nos gustaría mostrarte el contenido en tu idioma y moneda local
+			</p>
+			<div class="selectNacionalidad ">
+			<div class="bandera">
+				<div class="rojo"></div>
+				<div class="rojo"></div>
+			</div>
+				<div class="select" >
+					<p class="nacionalidadAct">Soy Peruano(a)</p>
+					<p class="nacionalidadSelect" onclick="changeModal('modal','nacionalidadModal')" >¿Deseas elegir otra nacionalidad?<i class="changeIcon fas fa-sync-alt"></i></p>
+				</div>
+			</div>
+			<button class="modalButton" onclick="closeDimmer()" >
+				Confirmar nacionalidad
+			</button>
+			<p class="language" onclick="changeModal('modal','idiomaModal')" >Change language / Cambiar de idioma<i class="changeIcon fas fa-sync-alt"></i></p>
+		</div>
+
+		<div class="nacionalidadModal openAnim" id="nacionalidadModal">
+			<button class="backButton" onclick="changeModal('nacionalidadModal','modal')" ><i class="fas fa-angle-left"></i></button>
+			<p class="modalTitle">Elije tu nacionalidad</p>
+			<div class="divider"></div>
+			<div class="nacionalidadInputContain">
+				<img src="src/imagenes/search.png" alt="search">
+				<input type="text" placeholder="Escribe tu nacionalidad" class="input nacionalidadInput">
+			</div>
+			<img src="src/imagenes/passport.png" class="passportImg" alt="passport">
+			<p class="modalTextNacionalidad">
+				<strong>¿Para qué es importante conocer la nacionalidad?</strong>
+			</p>
+			<div class="list">
+				<p >conocemos tu nacionalidad podrás...</p>
+				<ul>
+					<li>Leer contenido del marketplace en tu idioma.</li>
+					<li>Ver los precios finales de las ofertas, ya que en algunos lugares los precios varían de acuerdo a la nacionalidad del viájero</li>
+					<li>Revisar todo en tu moneda local.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="idiomaModal openAnim" id="idiomaModal">
+			<button class="backButton" onclick="changeModal('idiomaModal','modal')" ><i class="fas fa-angle-left"></i></button>
+			<p class='modalTitle' >Cambiar de idioma</p>
+			<div class="divider"></div>
+			<button class="languageButton">English</button>
+			<button class="languageButton languageButtonSelect">Español <div class="check"><i class="fas fa-check"></i></div></button>
+			<button class="languageButton">Portugues</button>
+		</div>
+
+	</div>
+
 	<header id="header" >
 		<div class="headerBarBackground">
 			<div class="container headerBar">
@@ -222,5 +283,7 @@
 		</div>
 	</div>
 	</footer>
+	<script type="text/javascript" src="js/maqueta.js">
+	</script>
 </body>
 </html>
