@@ -314,6 +314,14 @@ body {
 	top: 15px;
 	right: 10px;
 	height: 30px;
+	width: 30px;
+	background-image: url('../src/imagenes/corvacio.png');
+	background-size: contain;
+	cursor: pointer;
+}
+
+.likeIt {
+	background-image: url('../src/imagenes/corlleno.png');
 }
 
 .card h3 {
@@ -503,7 +511,7 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	animation: dimmerAnim .5s forwards;
+	animation: dimmerAnim .2s forwards;
 }
 
 .dimmerActive {
@@ -573,7 +581,7 @@ footer {
 }
 
 .nacionalidadSelect {
-	font-family: 'lato-regular',sans-serif;
+	font-family: 'lato-regular',sans-serif;scale(1,1)
 	font-size: 18px;
 	color: #414667;
 	margin: 0;
@@ -634,7 +642,7 @@ footer {
 
 .modalTextNacionalidad {
 	font-family: 'lato-regular', sans-serif;
-	font-size: 16px;
+	font-size: 19px;
 	color: #414667;
 	margin: 30px 0 0;
 }
@@ -686,9 +694,9 @@ footer {
 		height: 70px;
 }
 
-.backButton i {
-	font-size: 50px;
-  color: #414567;
+.backButton img {
+	height: 35px;
+	margin-top: 5px;
 }
 
 .languageButton {
@@ -746,18 +754,22 @@ footer {
 
 @keyframes openModal {
 	from {
-		transform: scale(.0,.0) ;
+		transform: translateY(-500px) ;
+		opacity: 0;
 	}
 	to {
-		transform: scale(1,1);
+		transform:  translateY(0);
+		opacity: 1;
 	}
 }
 
 @keyframes closeModal {
 	from {
-		transform: scale(1,1,);
+		transform: translateY(0);
+		opacity: 1;
 	}
 	to {
-		transform: scale(.0,.0);
+		transform: translateY(-500px);
+		opacity: 0;
 	}
 }
