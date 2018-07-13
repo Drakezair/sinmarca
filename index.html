@@ -8,7 +8,87 @@
 </head>
 <body id="body" class="bodyDimmer" >
 
-	<div class="dimmer dimmerActive" id="dimmer">
+	<div class="dimmer" id="dimmerSigIn">
+
+		<div class="ingresaModal modalsActive openAnim" id="ingresaModal">
+			<i class="buttonClose fas fa-window-close" onclick="closeSignIn('ingresaModal')"></i>
+			<p class="modalTitle" >Regístrate ahora</p>
+			<div class="divider"></div>
+			<p class="modalText">¿Estás registrado con facebook?</p>
+			<button class="facebookB">
+				<i class="fab fa-facebook-f"></i>
+				Regístrate con Facebook
+			</button>
+			<div class="divider"></div>
+			<p class="modalText">O ingresa tu correo y contraseña</p>
+			<form action="">
+				<input type="text" placeholder="Correo electrónico">
+				<input type="text" placeholder="Contraseña" >
+			</form>
+			<button class="registrateB" >Iniciar sesión</button>
+			<div class="divider"></div>
+			<div class="signInOptions">
+				<p class="modalText" onclick="changeModalIngresa('ingresaModal','signInModal')" >¿No tienes cuenta? Registrate ahora</p>
+				<p class="modalText">¿Olvídaste tu clave? Restaurala aquí</p>
+			</div>
+		</div>
+
+		<div class="signInManual  openAnim" id="signInManual">
+			<i class="buttonClose fas fa-window-close" onclick="closeSignIn('signInManual')"></i>
+			<button class="backButton" onclick="changeModalIngresa('signInManual','signInModal')" ><img src="src/imagenes/iconback.png" alt="atras"></i></button>
+			<p class="modalTitle">Regístrate ahora</p>
+			<div class="divider"></div>
+			<form action="">
+				Ingresa un correo electrónico<br/>
+				<input type="text" placeholder="Correo electrónico" >
+				Ingresa tu nombre<br/>
+				<input type="text" placeholder="Nombre" >
+				Ingresa tu apellido<br/>
+				<input type="text" placeholder="Apellidos" >
+				Crea una clave de ingreso <br/>
+				<input type="text" placeholder="Crea tu clave" >
+				Ingresa tu fecha de nacimiento
+				<div>
+					<input type="text" placeholder="Día" >
+					<input type="text" placeholder="Mes" >
+					<input type="text" placeholder="Año" >
+				</div>
+			</form>
+			<p class="condicionesManual" >
+				Te enviaremos promociones,ofertas especiales y actualizaciones de nuestras políticas a través
+				del correo electrónico. Puedes desahibilitar esta opción en cualquier momento desde la configuración
+				de tu cuenta.
+			</p>
+			<button class="buttonRegis">Regístrate ahora</button>
+			<div class="divider"></div>
+			<div class="signInOptions">
+				<p class="modalText" onclick="changeModalIngresa('signInManual','ingresaModal')" >¿Ya tienes cuenta? Ingresa ahora</p>
+				<p class="modalText">¿Olvídaste tu clave? Restaurala aquí</p>
+			</div>
+		</div>
+
+		<div class="signInModal openAnim" id="signInModal">
+			<i class="buttonClose fas fa-window-close" onclick="closeSignIn('signInModal')"></i>
+			<button class="backButton" onclick="changeModalIngresa('signInModal','ingresaModal')" ><img src="src/imagenes/iconback.png" alt="atras"></i></button>
+			<p class="modalTitle">Regístrate ahora</p>
+			<div class="divider"></div>
+			<p class="modalText">Elige cómo te gustaría registrarte</p>
+			<button class="facebookB">
+				<i class="fab fa-facebook-f"></i>
+				Regístrate con Facebook
+			</button>
+			<button class="registrateB" onclick="changeModalIngresa('signInModal','signInManual')" >Regístrate usando un correo electrónico</button>
+			<div class="divider"></div>
+			<div class="signInOptions">
+				<p class="modalText" onclick="changeModalIngresa('signInModal','ingresaModal')" >¿Ya tienes cuenta? Ingresa ahora</p>
+				<p class="modalText">¿Olvídaste tu clave? Restaurala aquí</p>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="dimmer dimmerActive" id="dimmerNacionalidad">
 
 		<div class="modal modalsActive openAnim" id="modal" >
 			<p class="modalTitle" >Confirma tu nacionalidad</p>
@@ -72,7 +152,7 @@
 			<div class="container headerBar">
 				<img src="src/imagenes/logo.png" alt="logo" class="logo">
 				<div class="headerBarOptions">
-					<span href="" class="option">Ingresar</span>
+					<span onclick="openSignIn()" class="option">Ingresar</span>
 					<span href="" class="option">Idioma</span>
 				</div>
 			</div>

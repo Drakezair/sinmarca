@@ -731,7 +731,159 @@ footer {
   align-items: center;
 }
 
+/* INGRSA MODAL */
+
+.ingresaModal {
+	height: 415px;
+	width: 540px;
+	background: #fff;
+	border: 1px solid #0e3c5b;
+	border-radius: 3px;
+	position: relative;
+	text-align: center;
+	padding: 10px;
+	display: none;
+}
+
+.ingresaModal .facebookB {
+	margin-bottom: 10px;
+}
+
+.ingresaModal form {
+	margin: 0px 52px ;
+}
+
+.ingresaModal form input {
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 5px;
+}
+
+/* MODAL SIGIN */
+
+.signInModal {
+	height: 270px;
+  width: 500px;
+	background: #fff;
+	border: 1px solid #0e3c5b;
+	border-radius: 3px;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	display: none;
+}
+
+.facebookB {
+	width: 80%;
+	height: 40px;
+	background: #3b5998;
+	border: none;
+	border-radius: 3px;
+	font-family: 'lato-regular', sans-serif;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.registrateB {
+	width: 80%;
+	height: 40px;
+	background: none;
+	border: #414667 solid 1px;
+	border-radius: 3px;
+	font-family: 'lato-regular', sans-serif;
+	color: #414667;
+	font-size: 18px;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.signInOptions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 30px;
+}
+
+.signInOptions p {
+	margin: 0 !important;
+	cursor: pointer;
+}
+
+/* MODAL SIGNIN MANUAL */
+
+.signInManual {
+	height: 600px;
+  width: 500px;
+	background: #fff;
+	border: 1px solid #0e3c5b;
+	border-radius: 3px;
+	padding: 10px;
+	text-align: center;
+	display: none;
+	font-family: 'lato-regular', sans-serif;
+	font-size: 16px;
+	color: #414667;
+}
+
+.signInManual form {
+	text-align: left;
+	margin: 10px 40px;
+}
+
+.signInManual form input {
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin: 5px 0 10px;
+}
+
+.signInManual form div {
+	display: flex;
+	justify-content: space-around;
+}
+
+.signInManual form div input:nth-of-type(2){
+	margin: 5px 10px 10px;
+}
+
+.signInManual form div input {
+	height: 30px;
+}
+
+.condicionesManual {
+	font-size: 11px;
+	margin: 0 50px 10px;
+}
+
+.buttonRegis {
+	width: 425px;
+	height: 45px;
+	background: #1b3d5a;
+	border: 1px solid #000;
+	border-radius: 3px;
+	margin: 5px 40px 10px;
+	color: #fff;
+	font-family: 'lato-regular', sans-serif;
+	font-size: 16px;
+}
+
 /* Modals utilities */
+
+.buttonClose {
+	position: absolute;
+	top:11px;
+	right: 10px;
+	color: #0e3c5b;
+	font-size: 25px;
+	cursor: pointer;
+	transition: .8s
+}
+
+.buttonClose:hover {
+	color: #e90808;
+}
 
 .modalsActive {
 	display: block;
