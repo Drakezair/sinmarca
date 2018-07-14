@@ -12,7 +12,7 @@
 
 		<div class="ingresaModal modalsActive openAnim" id="ingresaModal">
 			<i class="buttonClose fas fa-window-close" onclick="closeSignIn('ingresaModal')"></i>
-			<p class="modalTitle" >Regístrate ahora</p>
+			<p class="modalTitle" >Ingresa a tu cuenta</p>
 			<div class="divider"></div>
 			<p class="modalText">¿Estás registrado con facebook?</p>
 			<button class="facebookB">
@@ -25,11 +25,25 @@
 				<input type="text" placeholder="Correo electrónico">
 				<input type="text" placeholder="Contraseña" >
 			</form>
-			<button class="registrateB" >Iniciar sesión</button>
+			<button class="buttonI" >Iniciar sesión</button>
 			<div class="divider"></div>
 			<div class="signInOptions">
 				<p class="modalText" onclick="changeModalIngresa('ingresaModal','signInModal')" >¿No tienes cuenta? Registrate ahora</p>
-				<p class="modalText">¿Olvídaste tu clave? Restaurala aquí</p>
+				<p class="modalText" onclick="changeModalIngresa('ingresaModal','olvide')" >¿Olvídaste tu clave? Restaurala aquí</p>
+			</div>
+		</div>
+
+		<div class="olvide openAnim" id="olvide">
+			<i class="buttonClose fas fa-window-close" onclick="closeSignIn('olvide')"></i>
+			<button class="backButton" onclick="changeModalIngresa('olvide','ingresaModal')" ><img src="src/imagenes/iconback.png" alt="atras"></i></button>
+			<p class="modalTitle">Restaura tu clave</p>
+			<div class="divider"></div>
+			<p class="modalText">Ingresa tu correo y te enviaremos un mensaje con un enlace para que puedas restaurar tu clave</p>
+			<input type="text" placeholder="Correo electrónico">
+			<button class="buttonI" >Iniciar sesión</button>
+			<div class="divider"></div>
+			<div class="olvideOption">
+				<p onclick="changeModalIngresa('olvide','ingresaModal')" >¿No tienes cuenta? Regístrate aquí</p>
 			</div>
 		</div>
 
@@ -63,7 +77,7 @@
 			<div class="divider"></div>
 			<div class="signInOptions">
 				<p class="modalText" onclick="changeModalIngresa('signInManual','ingresaModal')" >¿Ya tienes cuenta? Ingresa ahora</p>
-				<p class="modalText">¿Olvídaste tu clave? Restaurala aquí</p>
+				<p class="modalText" onclick="changeModalIngresa('signInManual','olvide')" >¿Olvídaste tu clave? Restaurala aquí</p>
 			</div>
 		</div>
 
@@ -81,7 +95,7 @@
 			<div class="divider"></div>
 			<div class="signInOptions">
 				<p class="modalText" onclick="changeModalIngresa('signInModal','ingresaModal')" >¿Ya tienes cuenta? Ingresa ahora</p>
-				<p class="modalText">¿Olvídaste tu clave? Restaurala aquí</p>
+				<p class="modalText" onclick="changeModalIngresa('signInModal','olvide')" >¿Olvídaste tu clave? Restaurala aquí</p>
 			</div>
 		</div>
 

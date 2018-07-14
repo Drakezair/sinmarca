@@ -869,6 +869,57 @@ footer {
 	font-size: 16px;
 }
 
+/* OLVIDE MODALS */
+
+.olvide {
+	height: 263px;
+  width: 500px;
+	background: #fff;
+	border: 1px solid #0e3c5b;
+	border-radius: 3px;
+	padding: 10px;
+	text-align: center;
+	display: none;
+	position: relative;
+}
+
+.olvide input {
+	display: block;
+	width: 80%;
+	height: 30px;
+	margin: 5px auto 5px;
+}
+
+.olvide .modalText {
+	margin: auto 40px;
+	display: block;
+}
+
+.buttonI {
+	width: 80%;
+	height: 45px;
+	background: #1b3d5a;
+	border: 1px solid #000;
+	border-radius: 3px;
+	margin: 5px 40px 10px;
+	color: #fff;
+	font-family: 'lato-regular', sans-serif;
+	font-size: 16px;
+}
+
+.olvideOption {
+	display: block;
+}
+
+.olvideOption p {
+	float: left;
+	margin: 5px 0;
+	color: #0e3c5b;
+	font-family: 'lato-regular', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+}
+
 /* Modals utilities */
 
 .buttonClose {

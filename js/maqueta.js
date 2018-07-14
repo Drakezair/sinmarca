@@ -7,6 +7,7 @@ var $idioma = document.getElementById('idiomaModal');
 var $ingresa = document.getElementById('ingresaModal');
 var $signIn = document.getElementById('signInModal');
 var $signInManual = document.getElementById('signInManual');
+var $olvide = document.getElementById('olvide');
 
 function closeDimmer() {
   $modal.classList.add('closeAnim');
@@ -64,6 +65,9 @@ function changeModalIngresa(from, to){
     }
     if($from !== $signInManual){
        $signInManual.classList.remove('modalsActive')
+    }
+    if($from !== $olvide) {
+      $olvide.classList.remove('modalsActive')
     }
     if(event.animationName==='closeModal'){
         $from.classList.remove('closeAnim');
